@@ -24,3 +24,11 @@ window.onscroll = function() {
         toTop.classList.add('hidden');
     }
 };
+
+// klik diluar hamburger
+window.addEventListener('click', function(e) {
+    if (e.target != hamburger && e.target != navMenu) {
+        hamburger.classList.remove('hamburger-active');
+        navMenu.classList.add('hidden');
+    }
+});
