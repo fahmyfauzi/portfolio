@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="dist/css/final.css" rel="stylesheet" />
+    <!-- <link href="/dist/output.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="/dist/output.css" rel="stylesheet">
     <script>
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark')
@@ -32,22 +33,28 @@
                     <nav id="nav-menu" class="hidden absolute py-6 bg-white shadow-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-500 lg:dark:bg-transparent">
                         <ul class="block lg:flex">
                             <li class="group">
-                                <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Beranda</a>
+                                <a href="#home" class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white">Beranda</a>
                             </li>
                             <li class="group">
-                                <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Tentang Saya</a>
+                                <a href="#about" class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white">About</a>
                             </li>
                             <li class="group">
-                                <a href="#portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Portfolio</a>
+                                <a href="#portfolio" class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white">Portfolio</a>
                             </li>
                             <li class="group">
-                                <a href="#clients" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Clients</a>
+                                <a href="#clients" class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white">Clients</a>
                             </li>
                             <li class="group">
-                                <a href="#blog" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Blog</a>
+                                <a href="#skill" class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white">Skill</a>
                             </li>
                             <li class="group">
-                                <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Contact</a>
+                                <a href="#experience" class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white">Experience</a>
+                            </li>
+                            <li class="group">
+                                <a href="#blog" class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white">Blog</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contact" class="text-base text-dark py-2 mx-4 flex group-hover:text-primary dark:text-white">Contact</a>
                             </li>
                             <li class="mt-3 md:mt-0 flex items-center pl-8">
                                 <div class="flex">
@@ -74,7 +81,7 @@
 
 
     <!-- Hero section start -->
-    <section id="home" class="pt-36 dark:bg-dark">
+    <section id="home" class="pt-36 pb-32 dark:bg-dark">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4 lg:w-1/2">
@@ -86,7 +93,7 @@
                 </div>
                 <div class="w-full self-end px-4 lg:w-1/2">
                     <div class="relative mt-10 lg:mt-0 lg:mr-0">
-                        <img src="dist/img/fahmy.png" alt="fahmy fauzi" class="max-w-full mx-auto pt-4 relative z-10" />
+                        <img src="/dist/img/fahmy.png" alt="fahmy fauzi" class="max-w-full mx-auto pt-4 relative z-10" />
                         <span class="absolute -bottom-20  left-1/2 -translate-x-1/2 md:scale-125">
                 <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -196,28 +203,28 @@
             <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="dist/img/portfolio/project-1.png" alt="project Satu" width="w-full">
+                        <img src="/dist/img/portfolio/project-1.png" alt="project Satu" width="w-full">
                     </div>
                     <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Project Satu</h3>
                     <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nostrum nesciunt harum sunt? Alias, reprehenderit amet.</p>
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="dist/img/portfolio/project-2.png" alt="project Dua" width="w-full">
+                        <img src="/dist/img/portfolio/project-2.png" alt="project Dua" width="w-full">
                     </div>
                     <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Project Dua</h3>
                     <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nostrum nesciunt harum sunt? Alias, reprehenderit amet.</p>
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="dist/img/portfolio/project-3.png" alt="project Tiga" width="w-full">
+                        <img src="/dist/img/portfolio/project-3.png" alt="project Tiga" width="w-full">
                     </div>
                     <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Project Tiga</h3>
                     <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nostrum nesciunt harum sunt? Alias, reprehenderit amet.</p>
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="dist/img/portfolio/project-4.png" alt="project Empat" width="w-full">
+                        <img src="/dist/img/portfolio/project-4.png" alt="project Empat" width="w-full">
                     </div>
                     <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Project Empat</h3>
                     <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nostrum nesciunt harum sunt? Alias, reprehenderit amet.</p>
@@ -240,16 +247,16 @@
             <div class="w-full px-4">
                 <div class="flex flex-wrap items-center justify-center">
                     <a href="#" class="max-w-[120px] mx-4 py-6 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="dist/img/clients/google.svg" alt="google">
+                        <img src="/dist/img/clients/google.svg" alt="google">
                     </a>
                     <a href="#" class="max-w-[120px] mx-4 py-6 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="dist/img/clients/gojek.svg" alt="google">
+                        <img src="/dist/img/clients/gojek.svg" alt="google">
                     </a>
                     <a href="#" class="max-w-[120px] mx-4 py-6 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="dist/img/clients/shopee.svg" alt="google">
+                        <img src="/dist/img/clients/shopee.svg" alt="google">
                     </a>
                     <a href="#" class="max-w-[120px] mx-4 py-6 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="dist/img/clients/Tokopedia.svg" alt="google">
+                        <img src="/dist/img/clients/Tokopedia.svg" alt="google">
                     </a>
                 </div>
             </div>
@@ -257,13 +264,56 @@
     </section>
     <!-- client end -->
 
+    <!-- Keterampilan start -->
+    <section id="skill" class="pt-36 pb-32 bg-slate-100 dark:bg-dark">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-lg text-primary mb-2">Skill</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl md:text-lg dark:text-white">Keterampilan Yang Dikuasai</h2>
+                    <p class="font-medium text-md text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint deleniti optio?</p>
+                </div>
+
+            </div>
+    </section>
+
+    <!-- Keterampilan end -->
+
+    <!-- Experience start -->
+    <section id="experience" class="pt-36 pb-32 bg-slate-800 dark:bg-slate-100">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-lg text-primary mb-2">Experience</h4>
+                    <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl md:text-lg dark:text-dark">Pengalaman Kerja</h2>
+                    <p class="font-medium text-md text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut quod nam dolorem quas aliquam aspernatur!</p>
+                </div>
+            </div>
+
+
+            <div class="flex flex-wrap justify-items-center">
+                <div class="w-full px-8 lg:w-4/5 lg:order-first order-last">
+                    <h2 class="font-bold text-slate-300 text-3xl  max-w-xl lg:text-4xl dark:text-dark">PT. Cantara Digital Innovation</h2>
+                    <h4 class="font-bold uppercase text-slate-400 text-lg mb-2">Fullstack Web Developer</h4>
+
+
+                    <p class="font-medium text-base text-secondary max-w-6xl lg:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat explicabo sapiente incidunt, eaque tempore voluptatem quo perspiciatis ipsum. Autem tempora commodi odit id placeat dicta excepturi blanditiis deleniti doloremque, esse</p>
+                </div>
+                <div class="w-full px-8  lg:w-1/5 order-first lg:order-last">
+                    <p class=" font-medium text-base text-slate-400  dark:text-dark lg:pt-0 lg:mb-0">Maret 2022 - present</p>
+                </div>
+            </div>
+    </section>
+
+    <!-- Experience end -->
+
     <!-- blog start -->
     <section id="blog" class="pt-36 pb-32 bg-slate-100 dark:bg-dark">
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
                     <h4 class="font-semibold text-lg text-primary mb-2">Blog</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl md:text-lg dark:text-white">Tulisan Terkini</h2>
+                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl md:text-lg dark:text-white ">Tulisan Terkini</h2>
                     <p class="font-medium text-md text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint deleniti optio?</p>
                 </div>
                 <div class="flex flex-wrap">
@@ -292,7 +342,7 @@
                                 Tips Bermain Game
                             </a>
                                 <p class="font-medium text-base text-secondary mb-6">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, repellat distinctio eaque veritatis quasi doloremque!
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, repellat /distinctio eaque veritatis quasi doloremque!
                                 </p>
                                 <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80 ">Baca Selengkapnya</a>
                             </div>
@@ -482,7 +532,7 @@
     <!-- back to top end -->
 
 
-    <script src="dist/js/script.js"></script>
+    <script src="/dist/js/script.js"></script>
 </body>
 
 </html>
